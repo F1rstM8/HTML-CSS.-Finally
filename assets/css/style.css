@@ -2,6 +2,7 @@
    1. BASE & RESET
    ========================================= */
 :root {
+  
   --bg-overlay: #f5efeb;
   --transition: 250ms ease;
   --primary-green: #264333;
@@ -11,6 +12,9 @@
   --accent-color: #c14d23;
   --font-title: "Merriweather", serif;
   --font-text: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -45,8 +49,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   line-height: 1;
-  z-index: 1001;
-  font-weight: normal;
+  font-weight: 20l;
   text-decoration: none;
   font-size: clamp(1.4rem, 2.5vw, 2rem);
   font-family: var(--font-text);
@@ -66,7 +69,6 @@ body {
   display: none;
   cursor: pointer;
   font-size: 28px;
-  z-index: 1002;
   user-select: none;
   color: #1a2e22;
 }
@@ -85,7 +87,7 @@ body {
 }
 
 .nav-list a {
-  position: relative;
+
   padding: 8px 6px;
   letter-spacing: 1px;
   border-radius: 6px;
@@ -195,18 +197,17 @@ body {
 
 .hero-text {
   flex: 1;
-  z-index: 2;
   padding-left: 120px;
   text-align: left;
 }
 
 .hero-title {
-  margin-bottom: 15px;
-  font-size: 85px;
+  font-family: var(--font-title);
+  font-size: clamp(2.5rem, 8vw, 5.5rem);
+  color: #1a2e22;
   line-height: 0.9;
   font-weight: normal;
-  font-family: var(--font-title);
-  color: #1a2e22;
+  margin-bottom: 15px;
 }
 
 .hero-name-highlight {
@@ -250,17 +251,19 @@ body {
 }
 
 .hero-image-wrapper {
-  height: 100%;
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; 
   align-items: flex-end;
+  height: 100%;
 }
 
 .hero-image-wrapper img {
   /* ??? я так розумію,що вказувати грубу ширину,це було помилкою,але інакше,в мене гарно б не вийшло розположення */
   width: 1440px;
-  height: 603px;
+  max-width: none;
+  min-width: none;
+  height: 603;
   display: block;
   margin-right: 40%;
 }
@@ -287,7 +290,6 @@ body {
   }
 
   .hero-title {
-    font-size: 36px;
     margin-bottom: 5px;
   }
 
@@ -349,13 +351,13 @@ body {
 
 .section-title {
   width: 100%;
+  font-family: var(--font-title);
+  font-size: clamp(2rem, 5vw, 3.75rem);
+  color: var(--primary-green);
   margin-bottom: 20px;
   margin-top: 0;
   padding-left: 100px;
   line-height: 1;
-  font-size: 60px;
-  font-family: var(--font-title);
-  color: var(--primary-green);
 }
 
 .service-card {
@@ -380,7 +382,7 @@ body {
 .card-title {
   margin-bottom: 10px;
   font-family: var(--font-title);
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 4vw, 3.5rem);
   line-height: 1.1;
   font-weight: normal;
 }
@@ -505,6 +507,12 @@ summary::-webkit-details-marker {
   flex-direction: column;
   align-items: center;
 }
+.recommendations-section .section-title {
+  padding-left: 0;      
+  max-width: 1000px;    
+  width: 100%;          
+  text-align: left;     /
+}
 
 .recommendations-grid {
   display: grid;
@@ -558,13 +566,13 @@ summary::-webkit-details-marker {
    7. CLIENTS SECTION
    ========================================= */
 .clients-section {
+  position: relative;
   padding: 60px 20px;
   padding-bottom: 180px;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
   background-color: #f5f9f5;
 }
 
@@ -629,7 +637,7 @@ summary::-webkit-details-marker {
 .bio-section {
   position: relative;
   width: 100%;
-  padding: 0 20px 80px 20px;
+  padding: 0 40px 100px 40px;
   z-index: 2;
   background: linear-gradient(to bottom, #1a2e22 55%, #cfdcc2 55%);
   overflow: visible;
@@ -638,7 +646,7 @@ summary::-webkit-details-marker {
 .bio-wrapper {
   position: relative;
   z-index: 2;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -658,10 +666,10 @@ summary::-webkit-details-marker {
 }
 
 .bio-title {
-  margin-bottom: 20px;
-  line-height: 1;
   font-family: var(--font-title);
-  font-size: 60px;
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  line-height: 1;
+  margin-bottom: 20px;
 }
 
 .bio-description {
@@ -672,10 +680,10 @@ summary::-webkit-details-marker {
 }
 
 .bio-image-wrapper {
-  max-width: 45%;
-  margin-top: -95px;
-  z-index: 10;
   position: relative;
+  max-width: 45%;
+  margin-top: -155px;
+  z-index: 10;
 }
 
 .bio-image {
@@ -687,7 +695,7 @@ summary::-webkit-details-marker {
 
 .quote-decoration {
   position: absolute;
-  margin-top: 35px;
+  margin-top: 45px;
   top: 55%;
   left: 0;
   z-index: 3;
@@ -700,7 +708,6 @@ summary::-webkit-details-marker {
 }
 
 .testimonial-wrapper {
-  margin-top: 40px;
   gap: 40px;
   display: flex;
   align-items: center;
@@ -709,11 +716,10 @@ summary::-webkit-details-marker {
 }
 
 .testimonial-card {
-  max-width: 600px;
+  max-width: 780px;
 }
 
 .testimonial-text {
-  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -724,15 +730,54 @@ summary::-webkit-details-marker {
   text-align: right;
 }
 
-.leaf-decoration {
+  .leaf-decoration {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 200px;
+  bottom: -160px;
+  right: -260px;
+  width: 320px;
   z-index: 1;
   opacity: 0.8;
+  pointer-events: none; 
 }
 
+
+@media (max-width: 900px) {
+  .leaf-decoration {
+   
+    right: -500px; 
+    
+ 
+    opacity: 0;
+  }
+}
+.slider-arrow {
+  position: relative; 
+  z-index: 100;       
+  padding: 10px;
+  align-self: center;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: var(--primary-orange);
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-text-stroke: 1px var(--bg-color);
+  
+
+}
+
+/* Остальное без изменений */
+.slider-arrow:hover {
+  color: #a8320e;
+  transform: scale(1.1);
+}
+
+.left-arrow {
+  margin-right: 20px;
+}
+.right-arrow {
+  margin-left: 20px;
+}
 /* =========================================
    9. FOOTER
    ========================================= */
@@ -751,6 +796,7 @@ summary::-webkit-details-marker {
 }
 
 .footer-logo {
+  padding-left: 20%;
   display: flex;
   flex-direction: column;
   line-height: 1;
@@ -765,28 +811,22 @@ summary::-webkit-details-marker {
 }
 
 .logo-light {
+  
   font-family: var(--font-text);
   font-weight: 300;
 }
 
 .copyright {
+  margin-top: 100px;  
+  white-space: nowrap;
   font-size: 14px;
   color: #888;
 }
 
 .footer-socials {
+  padding-right: 20%;
   gap: 10px;
   display: flex;
 }
 
-@media (max-width: 768px) {
-  .footer-container {
-    gap: 20px;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-logo {
-    align-items: center;
-  }
-}
+  
