@@ -2,7 +2,6 @@
    1. BASE & RESET
    ========================================= */
 :root {
-  
   --bg-overlay: #f5efeb;
   --transition: 250ms ease;
   --primary-green: #264333;
@@ -28,18 +27,35 @@ body {
   color: var(--text-color);
 }
 
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.main-width {
+  min-width: 343px;
+  max-width: 941px;
+  width: 90%;
+  margin: auto;
+}
+
 /* =========================================
    2. HEADER & MOBILE MENU
    ========================================= */
 .site-header {
   position: relative;
-  padding: 14px 10%;
+
   min-height: 107px;
   z-index: 1000;
+
+  background-color: var(--bg-overlay);
+}
+
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bg-overlay);
+  padding-top: 24px;
 }
 
 .brand-logo {
@@ -60,7 +76,6 @@ body {
   font-weight: bold;
 }
 
-/* --- Mobile Menu Logic --- */
 .menu-checkbox {
   display: none;
 }
@@ -77,17 +92,15 @@ body {
   display: none;
 }
 
-/* --- Desktop Nav --- */
 .nav-list {
   gap: 22px;
   display: flex;
   justify-content: center;
-  align-self: center;
+
   list-style: none;
 }
 
 .nav-list a {
-
   padding: 8px 6px;
   letter-spacing: 1px;
   border-radius: 6px;
@@ -171,33 +184,26 @@ body {
    3. HERO SECTION ??????(декілька питань по цьому блоку)
    ========================================= */
 .hero-section {
-  position: relative;
-  padding: 0 5%;
-  width: 100%;
   min-height: 603px;
   background-color: #cddab2;
   background-image: url("../image/leaflet.png");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+
+  overflow-y: hidden;
 }
 
 .hero-container {
   display: flex;
-  width: 100%;
-  max-width: 1200px;
+
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
 }
 
 .hero-text {
   flex: 1;
-  padding-left: 120px;
+  padding-left: 12%;
   text-align: left;
 }
 
@@ -226,19 +232,22 @@ body {
   font-family: var(--font-text);
 }
 
-.hero-socials {
-  display: flex;
-  gap: 12px;
+.hero-socials li {
+  display: inline-block;
 }
 
 .social-link-circle {
-  height: 40px;
-  width: 40px;
+  height: 44px;
+  width: 44px;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
+
+  display: inline-block;
+
   align-items: center;
   text-decoration: none;
+  text-align: center;
+
+  line-height: 44px;
   font-size: 18px;
   transition: 0.3s;
   color: white;
@@ -250,31 +259,15 @@ body {
   transform: translateY(-3px);
 }
 
-.hero-image-wrapper {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end; 
-  align-items: flex-end;
-  height: 100%;
-}
-
-.hero-image-wrapper img {
-  /* ??? я так розумію,що вказувати грубу ширину,це було помилкою,але інакше,в мене гарно б не вийшло розположення */
-  width: 1440px;
-  max-width: none;
-  min-width: none;
-  height: 603;
-  display: block;
-  margin-right: 40%;
+.hero-image {
+  transform: translateY(1vmax);
 }
 
 /* --- Hero Responsive --- */
 @media (max-width: 900px) {
   .hero-section {
     min-height: 300px;
-    padding: 20px 5%;
-    background-position: -500px center;
-    align-items: flex-end;
+    background-image: none;
   }
 
   .hero-container {
@@ -300,28 +293,14 @@ body {
   }
 
   .social-link-circle {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
     font-size: 14px;
   }
-  .hero-socials {
-    gap: 8px;
-  }
 
-  .hero-image-wrapper {
-    flex: 0.9;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: relative;
-  }
-
-  .hero-image-wrapper img {
-    width: 220%;
-    max-width: none;
-    margin-right: -30%;
-    margin-bottom: -7%;
-    transform: translateX(-15%);
+  .hero-image {
+    transform: translateY(3vmax);
   }
 }
 
@@ -337,11 +316,6 @@ body {
   background-color: #f5f9ed;
 }
 
-.container {
-  max-width: 1200px;
-  width: 100%;
-}
-
 .services-grid {
   display: flex;
   flex-wrap: wrap;
@@ -350,13 +324,12 @@ body {
 }
 
 .section-title {
-  width: 100%;
   font-family: var(--font-title);
   font-size: clamp(2rem, 5vw, 3.75rem);
   color: var(--primary-green);
   margin-bottom: 20px;
   margin-top: 0;
-  padding-left: 100px;
+
   line-height: 1;
 }
 
@@ -508,10 +481,10 @@ summary::-webkit-details-marker {
   align-items: center;
 }
 .recommendations-section .section-title {
-  padding-left: 0;      
-  max-width: 1000px;    
-  width: 100%;          
-  text-align: left;     /
+  padding-left: 0;
+  max-width: 1000px;
+  width: 100%;
+  text-align: left;
 }
 
 .recommendations-grid {
@@ -636,10 +609,9 @@ summary::-webkit-details-marker {
    ========================================= */
 .bio-section {
   position: relative;
-  width: 100%;
-  padding: 0 40px 100px 40px;
+
   z-index: 2;
-  background: linear-gradient(to bottom, #1a2e22 55%, #cfdcc2 55%);
+  background-color: #1a2e22;
   overflow: visible;
 }
 
@@ -651,16 +623,14 @@ summary::-webkit-details-marker {
 }
 
 .bio-content {
-  margin-bottom: 60px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
 .bio-text {
-  position: relative;
-  max-width: 50%;
-  margin-top: 100px;
+  max-width: 458px;
+  margin-top: 10%;
   z-index: 5;
   color: white;
 }
@@ -680,26 +650,23 @@ summary::-webkit-details-marker {
 }
 
 .bio-image-wrapper {
-  position: relative;
-  max-width: 45%;
-  margin-top: -155px;
-  z-index: 10;
+  margin-top: -150px;
 }
 
 .bio-image {
-  width: 100%;
-  max-width: 400px;
   border-radius: 4px;
-  display: block;
+
+  transform: translateY(1vmax);
 }
 
 .quote-decoration {
   position: absolute;
   margin-top: 45px;
-  top: 55%;
+
+  bottom: 0;
   left: 0;
   z-index: 3;
-  transform: translateY(-50%);
+  transform: translateY(50%);
 }
 
 .quote-icon {
@@ -707,11 +674,22 @@ summary::-webkit-details-marker {
   height: auto;
 }
 
+.bio-section + section {
+  background-color: #cfdcc2;
+}
+.testimonial {
+  background-image: url("../image/leaflet-right.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto;
+}
+
 .testimonial-wrapper {
   gap: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10% 0;
   color: #1a2e22;
 }
 
@@ -730,29 +708,9 @@ summary::-webkit-details-marker {
   text-align: right;
 }
 
-  .leaf-decoration {
-  position: absolute;
-  bottom: -160px;
-  right: -260px;
-  width: 320px;
-  z-index: 1;
-  opacity: 0.8;
-  pointer-events: none; 
-}
-
-
-@media (max-width: 900px) {
-  .leaf-decoration {
-   
-    right: -500px; 
-    
- 
-    opacity: 0;
-  }
-}
 .slider-arrow {
-  position: relative; 
-  z-index: 100;       
+  position: relative;
+  z-index: 100;
   padding: 10px;
   align-self: center;
   background: none;
@@ -762,11 +720,8 @@ summary::-webkit-details-marker {
   cursor: pointer;
   transition: 0.3s;
   -webkit-text-stroke: 1px var(--bg-color);
-  
-
 }
 
-/* Остальное без изменений */
 .slider-arrow:hover {
   color: #a8320e;
   transform: scale(1.1);
@@ -777,6 +732,16 @@ summary::-webkit-details-marker {
 }
 .right-arrow {
   margin-left: 20px;
+}
+@media (max-width: 900px) {
+  .testimonial {
+    background-image: none;
+  }
+
+  .bio-text {
+    position: relative;
+    top: -45px;
+  }
 }
 /* =========================================
    9. FOOTER
@@ -811,13 +776,12 @@ summary::-webkit-details-marker {
 }
 
 .logo-light {
-  
   font-family: var(--font-text);
   font-weight: 300;
 }
 
 .copyright {
-  margin-top: 100px;  
+  margin-top: 100px;
   white-space: nowrap;
   font-size: 14px;
   color: #888;
@@ -828,5 +792,3 @@ summary::-webkit-details-marker {
   gap: 10px;
   display: flex;
 }
-
-  

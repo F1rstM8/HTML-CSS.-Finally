@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2222222Ana Zeferino</title>
+    <title>Ana Zeferino</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -21,26 +21,28 @@
   </head>
   <body>
     <header class="site-header">
-      <a href="#" class="brand-logo"><span>ana </span>zeferino</a>
+      <div class="main-width header-content">
+        <a href="#" class="brand-logo"><span>ana </span>zeferino</a>
 
-      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
 
-      <label for="menu-toggle" class="mobile-menu-btn">
-        <i class="fa-solid fa-bars open-icon"></i>
-        <i class="fa-solid fa-xmark close-icon"></i>
-      </label>
+        <label for="menu-toggle" class="mobile-menu-btn">
+          <i class="fa-solid fa-bars open-icon"></i>
+          <i class="fa-solid fa-xmark close-icon"></i>
+        </label>
 
-      <ul class="nav-list">
-  <li class="nav-item-active"><a href="#services">Serviços</a></li>
-  <li><a href="#recommendations">Eu indico</a></li>
-  <li><a href="#about">Sobre</a></li>
-  <li><a href="#testimonials">Depoimentos</a></li>
-</ul>
+        <ul class="nav-list">
+          <li class="nav-item-active"><a href="#services">Serviços</a></li>
+          <li><a href="#recommendations">Eu indico</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#testimonials">Depoimentos</a></li>
+        </ul>
+      </div>
     </header>
 
-    <section>
+    <main>
       <article class="hero-section">
-        <div class="hero-container">
+        <div class="hero-container main-width">
           <div class="hero-text">
             <h1 class="hero-title">
               <span class="hero-name-highlight">Ana</span>
@@ -48,290 +50,307 @@
             </h1>
             <p class="hero-subtitle">Gestora de marketing digital</p>
 
-            <div class="hero-socials">
-              <a href="#" class="social-link-circle"
-                ><i class="fa-solid fa-envelope"></i
-              ></a>
-              <a href="#" class="social-link-circle"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-              <a href="#" class="social-link-circle"
-                ><i class="fa-brands fa-behance"></i
-              ></a>
-              <a href="#" class="social-link-circle"
-                ><i class="fa-brands fa-linkedin-in"></i
-              ></a>
-              <a href="#" class="social-link-circle"
-                ><i class="fa-brands fa-whatsapp"></i
-              ></a>
-            </div>
+            <ul class="hero-socials">
+              <li>
+                <a href="#" class="social-link-circle"
+                  ><i class="fa-solid fa-envelope"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social-link-circle"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social-link-circle"
+                  ><i class="fa-brands fa-behance"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social-link-circle"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="social-link-circle"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </li>
+            </ul>
           </div>
 
-          <div class="hero-image-wrapper">
-            <img src="assets/image/Mask group.png" alt="Ana Zeferino photo" />
-          </div>
+          <picture>
+            <source
+              srcset="./assets/image/Ana_Zeferino_453x603.png"
+              media="(min-width: 900px)"
+            />
+            <img
+              class="hero-image"
+              src="./assets/image/Ana_Zeferino_183x302.png"
+              alt="Ana Zeferino"
+            />
+          </picture>
         </div>
       </article>
-    </section>
-<section class="services-section" id="services">
-      <div class="container">
-        <h2 class="section-title">Serviços</h2>
 
-        <div class="services-grid">
-          <article class="service-card">
-            <h2 class="card-title">Consultoria individual</h2>
-            <p class="card-text">
-              A consultoria é um serviço individualizado que segue uma estrutura
-              com foco em diagnosticar e encaminhar um plano de ação diante um
-              problema/questão trazida pelo cliente.
-            </p>
+      <section class="services-section" id="services">
+        <div class="container main-width">
+          <h2 class="section-title">Serviços</h2>
 
-            <details class="accordion-item">
-              <summary>
-                Assuntos que atendo nas consultorias
-                <i class="fa-solid fa-chevron-down"></i>
-              </summary>
-              <div class="accordion-content">
-                <p>Detalhes sobre os assuntos atendidos...</p>
-              </div>
-            </details>
+          <div class="services-grid">
+            <article class="service-card">
+              <h2 class="card-title">Consultoria individual</h2>
+              <p class="card-text">
+                A consultoria é um serviço individualizado que segue uma
+                estrutura com foco em diagnosticar e encaminhar um plano de ação
+                diante um problema/questão trazida pelo cliente.
+              </p>
 
-            <details class="accordion-item">
-              <summary>
-                Como funciona a minha consultoria
-                <i class="fa-solid fa-chevron-down"></i>
-              </summary>
-              <div class="accordion-content">
-                <p>Detalhes sobre o funcionamento...</p>
-              </div>
-            </details>
+              <details class="accordion-item">
+                <summary>
+                  Assuntos que atendo nas consultorias
+                  <i class="fa-solid fa-chevron-down"></i>
+                </summary>
+                <div class="accordion-content">
+                  <p>Detalhes sobre os assuntos atendidos...</p>
+                </div>
+              </details>
 
-            <a href="#" class="btn btn-primary">
-              <i class="fa-solid fa-check"></i> QUERO A CONSULTORIA
-            </a>
-          </article>
-
-          <article class="service-card">
-            <h2 class="card-title">Landing <br />Page</h2>
-            <p class="card-text">
-              Precisa de uma página de captura para sua isca digital, uma página
-              de lista de espera...
-            </p>
-
-            <details class="accordion-item">
-              <summary>
-                Como funciona o processo
-                <i class="fa-solid fa-chevron-down"></i>
-              </summary>
-              <div class="accordion-content">
-                <p>Detalhes do processo...</p>
-              </div>
-            </details>
-
-            <a href="#" class="btn btn-outline">
-              <i class="fa-brands fa-instagram"></i> ACESSE MEU PORTFÓLIO
-            </a>
-
-            <a href="#" class="btn btn-primary">
-              <i class="fa-solid fa-check"></i> QUERO A CONSULTORIA
-            </a>
-          </article>
-
-          <article class="service-card full-width">
-            <h2 class="card-title">
-              Treinamento in company | <br />Gestão de lançamento
-            </h2>
-            <p class="card-subtitle">(parceria com Ana Laura Lobo)</p>
-            <p class="card-text">O treinamento in company ou mentoria...</p>
-
-            <div class="card-actions">
               <details class="accordion-item">
                 <summary>
                   Como funciona a minha consultoria
                   <i class="fa-solid fa-chevron-down"></i>
                 </summary>
                 <div class="accordion-content">
-                  <p>Detalhes...</p>
+                  <p>Detalhes sobre o funcionamento...</p>
                 </div>
               </details>
 
               <a href="#" class="btn btn-primary">
                 <i class="fa-solid fa-check"></i> QUERO A CONSULTORIA
               </a>
+            </article>
+
+            <article class="service-card">
+              <h2 class="card-title">Landing <br />Page</h2>
+              <p class="card-text">
+                Precisa de uma página de captura para sua isca digital, uma
+                página de lista de espera...
+              </p>
+
+              <details class="accordion-item">
+                <summary>
+                  Como funciona o processo
+                  <i class="fa-solid fa-chevron-down"></i>
+                </summary>
+                <div class="accordion-content">
+                  <p>Detalhes do processo...</p>
+                </div>
+              </details>
+
+              <a href="#" class="btn btn-outline">
+                <i class="fa-brands fa-instagram"></i> ACESSE MEU PORTFÓLIO
+              </a>
+
+              <a href="#" class="btn btn-primary">
+                <i class="fa-solid fa-check"></i> QUERO A CONSULTORIA
+              </a>
+            </article>
+
+            <article class="service-card full-width">
+              <h2 class="card-title">
+                Treinamento in company | <br />Gestão de lançamento
+              </h2>
+              <p class="card-subtitle">(parceria com Ana Laura Lobo)</p>
+              <p class="card-text">O treinamento in company ou mentoria...</p>
+
+              <div class="card-actions">
+                <details class="accordion-item">
+                  <summary>
+                    Como funciona a minha consultoria
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </summary>
+                  <div class="accordion-content">
+                    <p>Detalhes...</p>
+                  </div>
+                </details>
+
+                <a href="#" class="btn btn-primary">
+                  <i class="fa-solid fa-check"></i> QUERO A CONSULTORIA
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="recommendations-section" id="recommendations">
+        <h2 class="section-title">Eu indico</h2>
+
+        <div class="recommendations-grid">
+          <article class="recommendation-card">
+            <div class="card-thumbnail"></div>
+            <div class="card-content">
+              <h3 class="recommendation-title">
+                <span class="text-bold">Pack de Trellos</span> pra gestão da sua
+                empresa
+              </h3>
+              <a href="#" class="btn btn-small">
+                <i class="fa-solid fa-arrow-pointer"></i> ACESSAR
+              </a>
+            </div>
+          </article>
+
+          <article class="recommendation-card">
+            <div class="card-thumbnail"></div>
+            <div class="card-content">
+              <h3 class="recommendation-title">
+                <span class="text-bold">Mentoria</span> Trabalhe com Gestão de
+                Projetos
+              </h3>
+              <a href="#" class="btn btn-small">
+                <i class="fa-solid fa-arrow-pointer"></i> ACESSAR
+              </a>
+            </div>
+          </article>
+
+          <article class="recommendation-card">
+            <div class="card-thumbnail"></div>
+            <div class="card-content">
+              <h3 class="recommendation-title">
+                <span class="text-bold">Elementor</span> pra produção de landing
+                pages
+              </h3>
+              <a href="#" class="btn btn-small">
+                <i class="fa-solid fa-arrow-pointer"></i> ACESSAR
+              </a>
+            </div>
+          </article>
+
+          <article class="recommendation-card">
+            <div class="card-thumbnail"></div>
+            <div class="card-content">
+              <h3 class="recommendation-title">
+                <span class="text-bold">Kiwify</span> para vender produtos
+                digitais
+              </h3>
+              <a href="#" class="btn btn-small">
+                <i class="fa-solid fa-arrow-pointer"></i> ACESSAR
+              </a>
             </div>
           </article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="recommendations-section" id="recommendations">    
-      <h2 class="section-title">Eu indico</h2>
+      <section class="clients-section">
+        <h2 class="section-title text-center">
+          <span class="text-bold">Pessoas e empresas</span>
+          <span class="text-light">com quem já trabalhei</span>
+        </h2>
 
-      <div class="recommendations-grid">
-        <article class="recommendation-card">
-          <div class="card-thumbnail"></div>
-          <div class="card-content">
-            <h3 class="recommendation-title">
-              <span class="text-bold">Pack de Trellos</span> pra gestão da sua
-              empresa
-            </h3>
-            <a href="#" class="btn btn-small">
-              <i class="fa-solid fa-arrow-pointer"></i> ACESSAR
-            </a>
+        <div class="clients-grid">
+          <article class="client-item">
+            <div class="client-avatar"></div>
+            <h3 class="client-name">Ana Laura <br />Lobo</h3>
+          </article>
+          <article class="client-item">
+            <div class="client-avatar"></div>
+            <h3 class="client-name">Flordemim</h3>
+          </article>
+          <article class="client-item">
+            <div class="client-avatar"></div>
+            <h3 class="client-name">Júlia Mendonça</h3>
+          </article>
+          <article class="client-item">
+            <div class="client-avatar"></div>
+            <h3 class="client-name">Carolina Inthurn</h3>
+          </article>
+          <article class="client-item">
+            <div class="client-avatar"></div>
+            <h3 class="client-name">Save Me <br />Teacher</h3>
+          </article>
+          <article class="client-item">
+            <div class="client-avatar"></div>
+            <h3 class="client-name">Cami Lopes</h3>
+          </article>
+          <article class="client-item">
+            <div class="client-avatar"></div>
+            <h3 class="client-name">Digi Girls</h3>
+          </article>
+          <article class="client-item">
+            <div class="client-avatar"></div>
+            <h3 class="client-name">Ellora Haonne</h3>
+          </article>
+          <article class="client-item">
+            <div class="client-avatar"></div>
+            <h3 class="client-name">Jaqueline Gatti</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="bio-section" id="about">
+        <div class="bio-wrapper main-width">
+          <div class="bio-content">
+            <div class="bio-text">
+              <h2 class="bio-title">ana <br />zeferino</h2>
+              <p class="bio-description">
+                Formada em Comunicação Social com ênfase em Jornalismo pela
+                Universidade Federal de Viçosa. Atualmente sou gestora de
+                projetos digitais, com experiência profissional em lançamentos
+                digitais e e-commerce. Hoje também faço parte da equipe de
+                gestão Ana Laura Lobo.
+              </p>
+              <div class="bio-socials"></div>
+            </div>
+
+            <div class="bio-image-wrapper">
+              <picture>
+                <source
+                  srcset="./assets/image/Ana_Zeferino_487x730.png"
+                  media="(min-width: 900px)"
+                />
+                <img
+                  class="bio-image"
+                  src="./assets/image/Ana_Zeferino_124x156.png"
+                  alt="Ana Zeferino"
+                />
+              </picture>
+            </div>
           </div>
-        </article>
 
-        <article class="recommendation-card">
-          <div class="card-thumbnail"></div>
-          <div class="card-content">
-            <h3 class="recommendation-title">
-              <span class="text-bold">Mentoria</span> Trabalhe com Gestão de
-              Projetos
-            </h3>
-            <a href="#" class="btn btn-small">
-              <i class="fa-solid fa-arrow-pointer"></i> ACESSAR
-            </a>
+          <div class="quote-decoration">
+            <img src="assets/image/comma.png" alt="quote" class="quote-icon" />
           </div>
-        </article>
+        </div>
+      </section>
 
-        <article class="recommendation-card">
-          <div class="card-thumbnail"></div>
-          <div class="card-content">
-            <h3 class="recommendation-title">
-              <span class="text-bold">Elementor</span> pra produção de landing
-              pages
-            </h3>
-            <a href="#" class="btn btn-small">
-              <i class="fa-solid fa-arrow-pointer"></i> ACESSAR
-            </a>
-          </div>
-        </article>
+      <section class="testimonial" id="testimonials">
+        <div class="testimonial-wrapper main-width">
+          <button class="slider-arrow left-arrow">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
-        <article class="recommendation-card">
-          <div class="card-thumbnail"></div>
-          <div class="card-content">
-            <h3 class="recommendation-title">
-              <span class="text-bold">Kiwify</span> para vender produtos
-              digitais
-            </h3>
-            <a href="#" class="btn btn-small">
-              <i class="fa-solid fa-arrow-pointer"></i> ACESSAR
-            </a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="clients-section">
-      <h2 class="section-title text-center">
-        <span class="text-bold">Pessoas e empresas</span>
-        <span class="text-light">com quem já trabalhei</span>
-      </h2>
-
-      <div class="clients-grid">
-        <article class="client-item">
-          <div class="client-avatar"></div>
-          <h3 class="client-name">Ana Laura <br />Lobo</h3>
-        </article>
-        <article class="client-item">
-          <div class="client-avatar"></div>
-          <h3 class="client-name">Flordemim</h3>
-        </article>
-        <article class="client-item">
-          <div class="client-avatar"></div>
-          <h3 class="client-name">Júlia Mendonça</h3>
-        </article>
-        <article class="client-item">
-          <div class="client-avatar"></div>
-          <h3 class="client-name">Carolina Inthurn</h3>
-        </article>
-        <article class="client-item">
-          <div class="client-avatar"></div>
-          <h3 class="client-name">Save Me <br />Teacher</h3>
-        </article>
-        <article class="client-item">
-          <div class="client-avatar"></div>
-          <h3 class="client-name">Cami Lopes</h3>
-        </article>
-        <article class="client-item">
-          <div class="client-avatar"></div>
-          <h3 class="client-name">Digi Girls</h3>
-        </article>
-        <article class="client-item">
-          <div class="client-avatar"></div>
-          <h3 class="client-name">Ellora Haonne</h3>
-        </article>
-        <article class="client-item">
-          <div class="client-avatar"></div>
-          <h3 class="client-name">Jaqueline Gatti</h3>
-        </article>
-      </div>
-    </section>
-
-   <section class="bio-section" id="about">
-      <div class="bio-wrapper">
-        <div class="bio-content">
-          <div class="bio-text">
-            <h2 class="bio-title">ana <br />zeferino</h2>
-            <p class="bio-description">
-              Formada em Comunicação Social com ênfase em Jornalismo pela
-              Universidade Federal de Viçosa. Atualmente sou gestora de projetos
-              digitais, com experiência profissional em lançamentos digitais e
-              e-commerce. Hoje também faço parte da equipe de gestão Ana Laura
-              Lobo.
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              Ana, tu és incrível e consequentemente o teu trabalho!
+              <br /><br />
+              Eu estava completamente perdida com os processos e a estruturação
+              do trabalho que iniciaria com a minha cliente, e tu me escutaste,
+              entendeste a minha dificuldade e simplesmente entregou tudo e
+              mais, que eu nem fazia ideia que precisava. Saber gerir um projeto
+              seja ele de estratégia de conteúdo, de lançamento foi fundamental
+              pra eu realizar um trabalho que gerasse re$ultado$ não só na minha
+              vida, mas também das minhas clientes.
             </p>
-            <div class="bio-socials"></div>
+            <p class="testimonial-author">Isabela Figueiró</p>
           </div>
 
-          <div class="bio-image-wrapper">
-            <img
-              src="assets/image/ana zeferino.png"
-              alt="Ana Zeferino"
-              class="bio-image"
-            />
-          </div>
+          <button class="slider-arrow right-arrow">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
-
-        <div class="quote-decoration">
-          <img src="assets/image/comma.png" alt="quote" class="quote-icon" />
-        </div>
-
-      <div class="testimonial-wrapper" id="testimonials">
-  <div class="testimonial-card">
-    </div>
-</div>
-
-<div class="testimonial-wrapper" id="testimonials">
-  <button class="slider-arrow left-arrow">
-    <i class="fa-solid fa-chevron-left"></i>
-  </button>
-
-  <div class="testimonial-card">
-    <p class="testimonial-text">
-      Ana, tu és incrível e consequentemente o teu trabalho!
-      <br /><br />
-      Eu estava completamente perdida com os processos e a estruturação
-      do trabalho que iniciaria com a minha cliente, e tu me escutaste,
-      entendeste a minha dificuldade e simplesmente entregou tudo e
-      mais, que eu nem fazia ideia que precisava. Saber gerir um projeto
-      seja ele de estratégia de conteúdo, de lançamento foi fundamental
-      pra eu realizar um trabalho que gerasse re$ultado$ não só na minha
-      vida, mas também das minhas clientes.
-    </p>
-    <p class="testimonial-author">Isabela Figueiró</p>
-  </div>
-
-  <button class="slider-arrow right-arrow">
-    <i class="fa-solid fa-chevron-right"></i>
-  </button>
-</div>
-
-      <img
-        src="assets/image/leaflet-right.png"
-        alt="leaf"
-        class="leaf-decoration"
-      />
-    </section>
+      </section>
+    </main>
 
     <footer class="site-footer">
       <div class="footer-container">
@@ -342,23 +361,33 @@
 
         <p class="copyright">© 2022 Ana Zeferino</p>
 
-        <div class="footer-socials">
-          <a href="#" class="social-link-circle"
-            ><i class="fa-solid fa-envelope"></i
-          ></a>
-          <a href="#" class="social-link-circle"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
-          <a href="#" class="social-link-circle"
-            ><i class="fa-brands fa-behance"></i
-          ></a>
-          <a href="#" class="social-link-circle"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <a href="#" class="social-link-circle"
-            ><i class="fa-brands fa-whatsapp"></i
-          ></a>
-        </div>
+        <ul class="footer-socials">
+          <li>
+            <a href="#" class="social-link-circle">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link-circle">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link-circle">
+              <i class="fa-brands fa-behance"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link-circle">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link-circle">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>
